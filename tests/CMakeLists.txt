@@ -1,1 +1,2 @@
 create_executable_project(Tests)
+add_subdirectory(lib_pair)
