@@ -1,3 +1,5 @@
+// Copyright 2023 <Victor Klimovich>
+
 #pragma once
 #include <iostream>
 #define STEP_CAPACITY 15
@@ -229,11 +231,12 @@ void TDMassive <T>::reserve(size_t n) {
     if (n < _capacity || _size < _capacity) {
         return;
     }
-    _capacity = (n / STEP_CAPACITY) * STEP_CAPACITY + STEP_CAPACITY;
+    _capacity = ((n + STEP_CAPACITY - 1) / STEP_CAPACITY) * STEP_CAPACITY; // Округление вверх
     if (_capacity > MAX_CAPACITY) {
-        throw std::logic_error("Error in function \
-\"void TDMassive <T>::reserve(size_t n)\": complete max size of capacity.");
+        throw std::logic_error(R"(Error in function 'void TDMassive<T>::reserve(size_t n)': exceeded maximum capacity.)");
     }
+
+   
     T* newData = new T[_capacity];
     std::memcpy(newData, _data, _size);
     delete[] _data;
