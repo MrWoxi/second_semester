@@ -1,5 +1,4 @@
-// Copyright 2024 Marina Usova
-
+// Copyright 2024 <Victor Klimovich>
 #include <gtest.h>
 
 int main(int argc, char **argv) {
