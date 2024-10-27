@@ -6,8 +6,11 @@
 #include <iostream>
 #include <iomanip>
 #include "../lib_easy_example/easy_example.h"
+#include "../lib_tvector/TVector.h"
 
 int main() {
+  TVector<int> vec(12);
+  vec.print();
   return 0;
 }
 

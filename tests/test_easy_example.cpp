@@ -20,7 +20,7 @@ TEST(TestEasyExampleLib, can_div_correctly) {
     int y = 2;
 
     // Act
-    int actual_result = division(x, y);
+    float actual_result = division(x, y);
 
     // Assert
     int expected_result = 3;

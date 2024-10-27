@@ -1,2 +1,2 @@
-// Copyright 2024 <Victor Klimovich>
+// Copyright 2024 Marina Usova
 #pragma once
