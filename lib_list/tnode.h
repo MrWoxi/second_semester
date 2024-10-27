@@ -52,4 +52,6 @@ TNode<T>& TNode<T>:: operator=
 }
 
 template <typename T>
-inline bool TNode<T>:: operator==(T value) { return _value == value; }
+inline bool TNode<T>::operator==(T value) {
+    return _value == value;
+}

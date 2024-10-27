@@ -38,7 +38,7 @@ class TList {
 
 
 template<typename T>
-TList<T>::TList<T>(const TList<T>& list) : head(list.head), last(list.last) {}
+TList<T>::TList(const TList<T>& list) : head(list.head), last(list.last) {}
 
 template<typename T>
 TList<T>::~TList() {

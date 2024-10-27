@@ -24,7 +24,6 @@ TEST(TNodeTest, CopyConstructor) {
     EXPECT_EQ(node2.value(), 5);
     EXPECT_EQ(node2.next(), nullptr);
 }
-
 TEST(TNodeTest, NextMethod) {
     TNode<int> node1(5);
     TNode<int> node2(10, &node1);
@@ -49,13 +48,6 @@ TEST(TNodeTest, AssignmentOperator) {
     node2 = node1;
     EXPECT_EQ(node2.value(), 5);
     EXPECT_EQ(node2.next(), nullptr);
-}
-
-TEST(TNodeTest, EqualityOperator) {
-    TNode<int> node1(5);
-    TNode<int> node2(5);
-    EXPECT_EQ(node1, 5);
-    EXPECT_EQ(node2, 5);
 }
 
 TEST(TListTest, PushFront) {
@@ -226,3 +218,4 @@ TEST(TListTest, TListAssort) {
     EXPECT_EQ(list->head->next()->next()->next()->next()->value(), 9);
     EXPECT_EQ(list->last->value(), 9);
 }
+

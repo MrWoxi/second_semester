@@ -1,1 +1,1 @@
-create_project_lib(TDMassive)
+create_project_lib(DMassive)
